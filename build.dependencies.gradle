@@ -1,0 +1,28 @@
+repositories {
+    mavenCentral()
+    google() // Needed for androidx
+    maven { url = "https://mymaven.bylazar.com/releases" } // Panels (Pedro)
+    maven { url = "https://maven.pedropathing.com" }       // Pedro Pathing
+    maven { url = "https://maven.brott.dev/" }             // FTC Dashboard (для FtcDashboard, если понадобится)
+}
+
+dependencies {
+    implementation 'org.firstinspires.ftc:Inspection:11.1.0'
+    implementation 'org.firstinspires.ftc:Blocks:11.1.0'
+    implementation 'org.firstinspires.ftc:RobotCore:11.1.0'
+    implementation 'org.firstinspires.ftc:RobotServer:11.1.0'
+    implementation 'org.firstinspires.ftc:OnBotJava:11.1.0'
+    implementation 'org.firstinspires.ftc:Hardware:11.1.0'
+    implementation 'org.firstinspires.ftc:FtcCommon:11.1.0'
+    implementation 'org.firstinspires.ftc:Vision:11.1.0'
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+
+    implementation 'com.pedropathing:ftc:2.1.0'
+    implementation 'com.pedropathing:telemetry:1.0.0'
+
+    implementation 'org.apache.commons:commons-math3:3.6.1'
+
+    // ВНИМАНИЕ: Panels и FTC Dashboard подключены в TeamCode/build.gradle
+    // в Sloth-вариантах (com.bylazar.sloth:fullpanels и com.acmerobotics.slothboard:dashboard).
+    // Здесь обычный 'com.bylazar:fullpanels' НЕ добавляем — будет двойной Panels.
+}
